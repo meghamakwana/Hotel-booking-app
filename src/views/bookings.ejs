@@ -1,0 +1,48 @@
+
+<h1>Your Booked Rooms</h1>
+<input type="hidden" id="userId" value="<%= user.id %>" required >
+<table class="table" id="bookings-table">
+  <thead>
+    <tr>
+      <th>Hotel</th>
+      <th>Rooms</th>
+      <th>Check-in</th>
+      <th>Check-out</th>
+      <th>Action</th>
+    </tr>
+  </thead>
+  <tbody>
+    <!-- Bookings data will be injected here via AJAX -->
+  </tbody>
+</table>
+<!-- Update and Cancel Booking Modal -->
+<div class="modal fade" id="updateBookingModal" tabindex="-1" role="dialog" aria-labelledby="updateBookingModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="bookingModalLabel">Update Booking</h5>
+            <button type="button"  class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+          </div>
+          <div class="modal-body">
+          <form id="updateBookingForm">
+            <input type="hidden" id ="update-booking-id" >
+            <div class="mb-3">
+              <label for="update-room-count" class="form-label">Number of Rooms</label>
+              <input type="number" class="form-control" id="update-room-count" required>
+            </div>
+            <div class="mb-3">
+              <label for="update-checkin-date" class="form-label">Check-in Date</label>
+              <input type="date" class="form-control" id="update-checkin-date" required>
+            </div>
+            <div class="mb-3">
+              <label for="update-checkout-date" class="form-label">Check-out Date</label>
+              <input type="date" class="form-control" id="update-checkout-date" required>
+            </div>
+            <button type="submit" class="btn btn-warning">Update Booking</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="/js/booking.js"></script>

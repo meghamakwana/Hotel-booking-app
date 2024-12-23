@@ -30,10 +30,10 @@
     "id": 4,
     "hotelId": 1,
     "userId": 1,
-    "roomsBooked": 2,
+    "roomsBooked": 1,
     "checkInDate": "2024-12-24",
     "checkOutDate": "2024-12-25",
-    "status": 0
+    "status": 2
   },
   {
     "id": 5,
@@ -42,7 +42,7 @@
     "roomsBooked": 1,
     "checkInDate": "2024-12-24",
     "checkOutDate": "2024-12-25",
-    "status": 0
+    "status": 2
   },
   {
     "id": 6,
@@ -96,6 +96,33 @@
     "roomsBooked": 3,
     "checkInDate": "2024-12-28",
     "checkOutDate": "2024-12-31",
+    "status": 0
+  },
+  {
+    "id": 12,
+    "hotelId": 1,
+    "userId": 1,
+    "roomsBooked": 1,
+    "checkInDate": "2024-12-25",
+    "checkOutDate": "2024-12-26",
+    "status": 0
+  },
+  {
+    "id": 13,
+    "hotelId": 1,
+    "userId": 1,
+    "roomsBooked": 1,
+    "checkInDate": "2024-12-25",
+    "checkOutDate": "2024-12-26",
+    "status": 0
+  },
+  {
+    "id": 14,
+    "hotelId": 1,
+    "userId": 1,
+    "roomsBooked": 1,
+    "checkInDate": "2025-02-11",
+    "checkOutDate": "2025-02-12",
     "status": 0
   }
 ]

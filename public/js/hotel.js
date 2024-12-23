@@ -32,7 +32,7 @@ window.onload = function() {
                     <h5 class="card-title">${hotel.name}</h5>
                     <p class="card-text">Location: ${hotel.location}</p>
                     <p class="card-text">Price per night: ₹ ${hotel.pricePerNight}</p>
-                    <p class="card-text">Available Rooms: ${hotel.roomsAvailable}</p>
+                    <p class="card-text">Total Rooms: ${hotel.roomsAvailable}</p>
                     <button class="btn btn-primary" data-id="${hotel.id}" onclick="openBookingModel(this)">Book Now</button>
                   </div>
                 </div>
@@ -90,7 +90,6 @@ window.onload = function() {
         if (data.bookingId) {
           // Booking was successful, show a success message
           alert(`Booking Successful! Booking ID: ${data.bookingId}`);
-          window.location.href = '/bookings'; // Redirect to bookings page
         } else {
           // Show an error message if booking failed
           alert(`Booking failed:  ${data.message}` );

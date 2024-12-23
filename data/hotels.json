@@ -1,0 +1,25 @@
+[
+    {
+      "id": 1,
+      "name": "Hotel Wow",
+      "location": "Indore",
+      "roomsAvailable": 50,
+      "pricePerNight": 1000
+    },
+    {
+      "id": 2,
+      "name": "Hotel Resort",
+      "location": "Dhar",
+      "roomsAvailable": 60,
+      "pricePerNight": 2000
+    },
+    {
+      "id": 3,
+      "name": "Hotel Sunshine",
+      "location": "Ujjain",
+      "roomsAvailable": 70,
+      "pricePerNight": 4000
+    }
+    
+  ]
+  

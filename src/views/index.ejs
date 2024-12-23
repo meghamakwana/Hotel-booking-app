@@ -1,0 +1,44 @@
+<h1 class="mb-4">Hotels</h1>
+
+<div class="row">
+  <!-- Search Bar Section -->
+  <div class="mb-5">
+    <input type="text" class="mb-9 form-control" id="location" placeholder="Search by location">
+  </div>
+</div> 
+
+<div class="row" id="hotel-list">
+  <!-- Hotel data will be injected here via AJAX -->
+</div>
+
+<!-- Modal for booking -->
+<div class="modal fade" id="bookingModal" tabindex="-1" role="dialog" aria-labelledby="bookingModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="bookingModalLabel">Book Room</h5>
+        <button type="button"  class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+      </div>
+      <div class="modal-body">
+        <form id="bookingForm">
+            <input type="hidden" id="hotelId" required >
+            <input type="hidden" id="userId" value="<%= user.id %>" required >
+          <div class="mb-3">
+            <label for="rooms">Number of Rooms</label>
+            <input type="number" class="form-control" id="rooms" required>
+          </div>
+          <div class="mb-3">
+            <label for="checkIn">Check-in Date</label>
+            <input type="date" class="form-control" id="checkIn" required>
+          </div>
+          <div class="mb-3">
+            <label for="checkOut">Check-out Date</label>
+            <input type="date" class="form-control" id="checkOut" required>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit Booking</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="/js/hotel.js"></script>
